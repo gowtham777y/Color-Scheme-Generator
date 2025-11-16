@@ -8,19 +8,21 @@
     </head>
     <body>
         <div class="container">
-            <div class="selector">
-                <input type="color" id="color-picker">
-                <select id="dropdown" name="selectedOption">
-                    <option value="monochrome">Monochrome</option>
-                    <option value="monochrome-dark">Monochrome-dark</option>
-                    <option value="monochrome-light">Monochrome-light</option>
-                    <option value="analogic">Analogic</option>
-                    <option value="complement">Complement</option>
-                    <option value="analogic-complement">Analogic-complement</option>
-                    <option value="triad">Triad</option>
-                    <option value="quad">Quad</option>
-                </select>
-                <button>Get Color Scheme</button>
+            <div>
+                <form class="selector" id="selector-form">
+                    <input type="color" id="color-picker" name="color-picker">
+                    <select id="dropdown" name="selectedOption">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button>Get Color Scheme</button>
+                </form>
             </div>
             <div class="colors">
                 <div id="color-1"></div>
