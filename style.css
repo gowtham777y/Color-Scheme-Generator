@@ -1,0 +1,84 @@
+body{
+    font-family: "Inter",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 34.375rem;
+    height: 34.375rem;
+    border: 1px solid darkgray;
+    position: relative;
+}
+
+.selector{
+    width: 100%;
+    height: 5.625rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.selector input {
+    width: 3.8125rem;
+    height: 2.625rem;
+    border: none;
+}
+
+.selector select {
+    width: 19.5em;
+    height: 2.625em;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #D1D5DB;
+}
+
+.selector button{
+    font-size: 0.75rem;
+    font-family: "Inter", sans-serif;
+    width: 10.25em;
+    height: 3.5em;
+    background-color: transparent;
+    border: 1px solid #D1D5DB;
+}
+
+.selector button:hover, 
+.selector button:focus{
+    cursor: pointer;
+}
+
+.colors{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+#color-1{
+    background-color: #D1D5DB;
+}
+
+.color-hexcodes{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 0.75rem;
+    height: 3.835em;
+    border: 1px solid rebeccapurple;
+    background: white;
+}
