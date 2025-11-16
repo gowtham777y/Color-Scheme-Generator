@@ -21,3 +21,13 @@ colorForm.addEventListener('submit',function(e){
         console.log("Error Fetching the data: ", error)
     })
 })
+
+function fillColors(colorsArray){
+    console.log(colorsArray)
+    for(let i=1;i<=5;i++){
+        const color = document.getElementById(`color-${i}`)
+        const colorHexCode = document.getElementById(`name-${i}`)
+        color.style.background = colorsArray[i-1]
+        colorHexCode.textContent = colorsArray[i-1]
+    }
+}
